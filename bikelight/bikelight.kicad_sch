@@ -1424,6 +1424,12 @@
 		(uuid "3616c8c4-0446-42aa-a07f-43fa3118cbf9")
 	)
 	(junction
+		(at 69.85 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cc8936d-2168-45d4-8473-7261533b3151")
+	)
+	(junction
 		(at 66.04 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1448,16 +1454,16 @@
 		(uuid "8f83a367-054f-45c5-951a-4293da997a15")
 	)
 	(junction
+		(at 81.28 41.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95b5d71c-e507-43b1-b1fa-5e5379d93e1e")
+	)
+	(junction
 		(at 97.79 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96208e8f-3d5d-45be-a8ca-1959bf573ed3")
-	)
-	(junction
-		(at 163.83 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b7b0fc5-951d-4552-b18e-afdc8e4b866a")
 	)
 	(junction
 		(at 78.74 44.45)
@@ -1625,13 +1631,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 80.01) (xy 201.93 80.01)
+			(xy 66.04 66.04) (xy 69.85 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "49959dc3-bf3a-418a-aa09-be1eb7517c71")
+		(uuid "48bee38e-4d39-41e0-9c58-1b61e166fab6")
 	)
 	(wire
 		(pts
@@ -1652,6 +1658,16 @@
 			(type default)
 		)
 		(uuid "57d54aed-8a9a-4108-8ee7-5e5a0b555d7b")
+	)
+	(wire
+		(pts
+			(xy 69.85 66.04) (xy 81.28 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66fbf808-fdf4-407a-9ceb-80d646c0e1e0")
 	)
 	(wire
 		(pts
@@ -1865,6 +1881,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 41.91) (xy 83.82 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce71bded-620b-4292-b5ca-a73efaae98bf")
+	)
+	(wire
+		(pts
 			(xy 201.93 92.71) (xy 213.36 92.71)
 		)
 		(stroke
@@ -1885,7 +1911,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 80.01) (xy 138.43 80.01)
+			(xy 130.81 80.01) (xy 201.93 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1913,15 +1939,71 @@
 		)
 		(uuid "e3658ac0-1cbd-4ae3-88f7-9df0e67d3280")
 	)
-	(wire
-		(pts
-			(xy 146.05 80.01) (xy 163.83 80.01)
+	(global_label "SW"
+		(shape input)
+		(at 180.34 62.23 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "a7f503bc-56a9-404f-8511-f035e06ceea9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.34 67.8761 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
 		)
-		(uuid "e6fce350-3e1e-4dc8-80af-bc5cd9430796")
+	)
+	(global_label "LED-"
+		(shape input)
+		(at 213.36 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "edc49e58-1652-45f2-9078-e1e38ae06781")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 221.3647 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED+"
+		(shape input)
+		(at 203.2 62.23 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f50d26c8-5c21-4cd7-8e98-0e8d36a42f7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 203.2 54.2253 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -1990,32 +2072,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 142.24 80.01 270)
+		(lib_id "Connector:TestPoint")
+		(at 83.82 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0b14455b-cd54-4061-a543-2c864620f881")
-		(property "Reference" "R3"
-			(at 142.748 82.55 90)
+		(uuid "07080757-3e84-46c0-a2ca-0906c248bb70")
+		(property "Reference" "TP11"
+			(at 83.82 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "1k"
-			(at 142.494 77.978 90)
+		(property "Value" "VCC"
+			(at 84.582 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 141.986 81.026 90)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 88.9 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2108,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 80.01 0)
+			(at 88.9 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2032,25 +2116,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 142.24 80.01 0)
+		(property "Description" "test point"
+			(at 83.82 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "2"
-			(uuid "7e3dfd45-c84b-473f-9a74-57e5f1b1031f")
 		)
 		(pin "1"
-			(uuid "2996da84-6261-411e-bb66-77a00565c52c")
+			(uuid "31a93722-1f8d-4760-b822-e83b59aa59d2")
 		)
 		(instances
-			(project ""
+			(project "bikelight"
 				(path "/1f6da0c1-d336-4985-8843-9750b472f6ce"
-					(reference "R3")
+					(reference "TP11")
 					(unit 1)
 				)
 			)
@@ -2343,73 +2424,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 163.83 80.01 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "30a37798-3c39-4bd1-95b3-beca45aae6ab")
-		(property "Reference" "TP7"
-			(at 166.37 82.0419 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 166.37 84.5819 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 158.75 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 163.83 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dcd17b49-1635-45e7-b66b-f22d88e47cc1")
-		)
-		(instances
-			(project ""
-				(path "/1f6da0c1-d336-4985-8843-9750b472f6ce"
-					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 81.28 44.45 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2427,7 +2441,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "GND"
 			(at 83.82 49.0219 0)
 			(effects
 				(font
@@ -2477,16 +2491,81 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 81.28 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4515cabf-ebbc-4442-8dae-9f7ea0acf408")
+		(property "Reference" "TP10"
+			(at 79.502 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GND"
+			(at 79.756 71.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 81.28 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e71666c-6e2d-4161-89af-747918167104")
+		)
+		(instances
+			(project "bikelight"
+				(path "/1f6da0c1-d336-4985-8843-9750b472f6ce"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 81.28 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4a5d4bf9-0897-4c60-bf2b-1c73175515c4")
 		(property "Reference" "TP2"
-			(at 83.82 37.9729 0)
+			(at 77.978 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2494,8 +2573,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 83.82 39.878 0)
+		(property "Value" "VCC"
+			(at 79.502 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,7 +2629,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4e50ec4b-889a-435c-a755-ca5d3c400514")
 		(property "Reference" "#FLG03"
 			(at 167.64 60.325 0)
@@ -2561,8 +2639,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 167.64 57.15 0)
+		(property "Value" "PWR_SW"
+			(at 167.894 63.754 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2759,7 +2837,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "DIM"
 			(at 87.63 82.042 90)
 			(effects
 				(font
@@ -2873,6 +2951,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 69.85 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "746ca789-f942-425f-b19e-80b84844ae36")
+		(property "Reference" "TP8"
+			(at 69.088 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.088 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55bdaf5c-e351-47d8-aef1-d2f071e5cb5e")
+		)
+		(instances
+			(project "bikelight"
+				(path "/1f6da0c1-d336-4985-8843-9750b472f6ce"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 66.04 46.99 0)
 		(unit 1)
@@ -2956,8 +3100,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 219.71 64.7699 0)
+		(property "Value" "LED"
+			(at 214.63 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3214,6 +3358,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 66.04 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b23c7dec-3f05-4e08-be55-0c97c1371ec2")
+		(property "Reference" "#PWR08"
+			(at 66.04 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0246e92a-d85e-4c83-a81b-f53257366c5c")
+		)
+		(instances
+			(project "bikelight"
+				(path "/1f6da0c1-d336-4985-8843-9750b472f6ce"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 97.79 49.53 0)
 		(unit 1)
@@ -3353,10 +3563,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c5b517ea-fe77-4742-a80a-68f56f40a7b6")
 		(property "Reference" "Jin2"
-			(at 72.39 41.9099 0)
+			(at 68.58 40.132 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3364,7 +3573,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "PWR"
 			(at 72.39 44.4499 0)
 			(effects
 				(font
@@ -3501,7 +3710,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "DIM"
 			(at 102.87 84.455 90)
 			(effects
 				(font
@@ -3634,7 +3843,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "LED-"
 			(at 227.33 69.3419 0)
 			(effects
 				(font
@@ -3841,7 +4050,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "LED+"
 			(at 227.33 60.1979 0)
 			(effects
 				(font
