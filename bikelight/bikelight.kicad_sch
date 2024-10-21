@@ -2222,7 +2222,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "TPS92200"
 			(at 146.05 49.53 0)
 			(effects
 				(font
