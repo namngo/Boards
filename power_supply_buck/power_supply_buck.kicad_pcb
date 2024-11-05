@@ -89,7 +89,7 @@
 	(footprint "Capacitor_SMD:C_Elec_6.3x7.7"
 		(layer "F.Cu")
 		(uuid "04f9a3ea-0cdd-4c00-8875-6bcb8f7b2bdd")
-		(at 169 96.56)
+		(at 171.4625 115.5)
 		(descr "SMD capacitor, aluminum electrolytic nonpolar, 6.3x7.7mm")
 		(tags "capacitor electrolyic nonpolar")
 		(property "Reference" "C6"
@@ -700,7 +700,7 @@
 	(footprint "Inductor_SMD:L_Bourns_SRR1260"
 		(layer "F.Cu")
 		(uuid "0dc09511-6a27-4faa-adcb-a192d347d859")
-		(at 158.64 85.46)
+		(at 178.65 86.5)
 		(descr "Bourns SRR1260 series SMD inductor http://www.bourns.com/docs/Product-Datasheets/SRR1260.pdf")
 		(tags "Bourns SRR1260 SMD inductor")
 		(property "Reference" "L1"
@@ -1283,7 +1283,7 @@
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "2adf7c7a-763e-46d5-b453-69f387d53f2b")
-		(at 159.3 100.11)
+		(at 138.5 89.5)
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J5"
@@ -1546,7 +1546,7 @@
 	(footprint "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "2beee8cc-cf26-46cc-94d0-b05a354eab7a")
-		(at 154.62 107.36)
+		(at 151.9375 112.5)
 		(descr "Capacitor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C5"
@@ -1756,7 +1756,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "34ef15b3-3b13-4bd4-9da7-c16a19bcffa7")
-		(at 162.5 97.06)
+		(at 189 98.5)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP2"
@@ -1926,7 +1926,7 @@
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3613efd6-a8fb-4783-b2fd-0bac1b803394")
-		(at 159.3 103.16)
+		(at 138 99)
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J6"
@@ -3136,7 +3136,7 @@
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "76f39586-ebe2-4029-aaa2-338b7a6cc5ee")
-		(at 159.3 106.21)
+		(at 139.5 112)
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J7"
@@ -3399,7 +3399,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "84b9897e-8823-4e49-8497-c0aaddd0e614")
-		(at 162.5 106.21)
+		(at 188 113)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP5"
@@ -3569,7 +3569,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "8e146528-e07b-49c5-9a34-06ae26a18c60")
-		(at 162.5 103.16)
+		(at 158.5 107.5)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP4"
@@ -3739,7 +3739,7 @@
 	(footprint "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical"
 		(layer "F.Cu")
 		(uuid "aa509557-2ce1-402f-a4c7-4087c031814b")
-		(at 159.3 97.06)
+		(at 152 81)
 		(descr "Through hole straight pin header, 1x01, 1.00mm pitch, single row")
 		(tags "Through hole pin header THT 1x01 1.00mm single row")
 		(property "Reference" "J4"
@@ -4212,7 +4212,7 @@
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "e2a774b6-a04f-4641-83bc-672761f50c97")
-		(at 162.5 100.11)
+		(at 160 112.5)
 		(descr "SMD rectangular pad as test Point, square 1.0mm side length")
 		(tags "test point SMD pad rectangle square")
 		(property "Reference" "TP3"
