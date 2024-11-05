@@ -1982,7 +1982,7 @@
 				)
 			)
 		)
-		(property "Footprint" "AP63203WU-7_DIO"
+		(property "Footprint" "AP63203.footprints:AP63203WU-7_DIO"
 			(at 130.81 90.17 0)
 			(effects
 				(font
